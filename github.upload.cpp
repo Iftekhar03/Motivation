@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() 
+{
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int n,x,m=0;
+	    scanf("%d %d",&n,&x);
+	    
+	    while(n--)
+	    {
+	        int s,r;
+	        scanf("%d %d",&s,&r);
+	        if(s<=x)
+	        {
+	            if(r>m)
+	            {
+	                m=r;
+	            }
+	        }
+	    }
+	    printf("%d\n",m);
+	    
+	}
+	return 0;
+}
+
+
